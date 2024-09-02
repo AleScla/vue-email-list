@@ -26,12 +26,10 @@
             <div class="container" id="app">
                 <div class="row">
                     <div class="col">
-                        <ul>
-                            <template v-if="eMails.length == 10">
-                                <li class="col" v-for="email in eMails">
-                                    {{email}}
-                                </li>
-                            </template>
+                        <ul v-if="eMails.length == 10">
+                            <li class="col" v-for="email in eMails">
+                                {{email}}
+                            </li>
                         </ul>
                     </div>
                 </div>
